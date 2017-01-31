@@ -18,7 +18,7 @@ require_once($CFG->dirroot . '/mod/hvp/renderer.php');
 
 class theme_superclean_mod_hvp_renderer extends mod_hvp_renderer {
 
-    public function hvp_alter_styles(&$styles, $libraries) {
+    public function hvp_alter_styles(&$styles, $libraries, $embedType) {
         global $CFG;
         if (
             isset($libraries['H5P.InteractiveVideo']) &&
@@ -31,7 +31,7 @@ class theme_superclean_mod_hvp_renderer extends mod_hvp_renderer {
         }
     }
 
-    public function hvp_alter_scripts(&$scripts, $libraries) {
+    public function hvp_alter_scripts(&$scripts, $libraries, $embedType) {
         global $CFG;
         if (
             isset($libraries['H5P.InteractiveVideo']) &&
