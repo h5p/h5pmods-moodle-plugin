@@ -37,18 +37,9 @@ class theme_superclean_mod_hvp_renderer extends mod_hvp_renderer {
             isset($libraries['H5P.InteractiveVideo']) &&
             $libraries['H5P.InteractiveVideo']['majorVersion'] == '1'
         ) {
+            $include_file = ($embedType === 'editor' ? 'customEditor.js' : 'custom.js');
             $scripts[] = (object) array(
-                'path'    => $CFG->httpswwwroot . '/theme/superclean/js/custom.js',
-                'version' => '?ver=0.0.1',
-            );
-        }
-
-        if (
-            isset($libraries['H5PEditor.InteractiveVideo']) &&
-            $libraries['H5PEditor.InteractiveVideo']['majorVersion'] == '1'
-        ) {
-            $scripts[] = (object) array(
-                'path'    => $CFG->httpswwwroot . '/theme/superclean/js/customEditor.js',
+                'path'    => $CFG->httpswwwroot . '/theme/superclean/js/' . $include_file,
                 'version' => '?ver=0.0.1',
             );
         }
