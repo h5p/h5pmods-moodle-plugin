@@ -5,9 +5,9 @@ This H5PMod theme is provided as an example of how you can use renderer provided
 
 ## Getting started
 
-1) Clone the repository to your theme folder
-2) Make sure to rename the project folder to the same name as your theme, as found in config.php.
-3) Enable the theme in your Moodle server under the appearance settings
+1. Clone the repository to your theme folder
+2. Make sure to rename the project folder to the same name as your theme, as found in config.php.
+3. Enable the theme in your Moodle server under the appearance settings
 
 ## Usage
 
