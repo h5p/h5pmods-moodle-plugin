@@ -9,7 +9,7 @@ $THEME->name = 'h5pmod';
 //////////////////////////////////
 //
 $THEME->doctype = 'html5';
-$THEME->parents = array('bootstrapbase');
+$THEME->parents = array('boost');
 $THEME->sheets = array('custom');
 $THEME->supportscssoptimisation = false;
 $THEME->yuicssmodules = array();
